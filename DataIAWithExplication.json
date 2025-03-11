@@ -1,0 +1,372 @@
+[
+    {
+        "id": "1",
+        "categorie": "Réclamations",
+        "question": "Quelle est la durée moyenne de traitement des réclamations ?",
+        "page": "KPI_01",
+        "graphique": "Nuage de points",
+        "données": "Date de création - Moyenne de temps de traitement par journée - Type de réclamation - Nombres de réclamations - Agence",
+        "motscles": "durée-traitement réclamations service-client satisfaction délais-résolution",
+        "explication": "Cette question appartient à la catégorie 'Réclamations'. Elle permet d'analyser 'Quelle est la durée moyenne de traitement des réclamations ?' en utilisant un Nuage de points. Les données exploitées sont : Date de création - Moyenne de temps de traitement par journée - Type de réclamation - Nombres de réclamations - Agence. Ce KPI est utile pour comprendre durée traitement réclamations service client satisfaction délais résolution."
+    },
+    {
+        "id": "2",
+        "categorie": "Réclamations",
+        "question": "Comment évoluent les réclamations par mois ?",
+        "page": "KPI_01",
+        "graphique": "Histogramme groupé",
+        "données": "Date - Nombre de réclamation",
+        "motscles": "évolution-réclamations tendances-mensuelles volume-reclamations",
+        "explication": "Cette question appartient à la catégorie 'Réclamations'. Elle permet d'analyser 'Comment évoluent les réclamations par mois ?' en utilisant un Histogramme groupé. Les données exploitées sont : Date - Nombre de réclamation. Ce KPI est utile pour comprendre évolution réclamations tendances mensuelles volume reclamations."
+    },
+    {
+        "id": "3",
+        "categorie": "Réclamations",
+        "question": "Quels sont les tendances mensuelles des réclamations et leur durée moyenne par année ?",
+        "page": "KPI_01",
+        "graphique": "Graphique en courbe",
+        "données": "Date - Nombre de réclamation - Temps moyen de traitement",
+        "motscles": "tendances-annuelles réclamations durée-moyenne délais-traitement",
+        "explication": "Cette question appartient à la catégorie 'Réclamations'. Elle permet d'analyser 'Quels sont les tendances mensuelles des réclamations et leur durée moyenne par année ?' en utilisant un Graphique en courbe. Les données exploitées sont : Date - Nombre de réclamation - Temps moyen de traitement. Ce KPI est utile pour comprendre tendances annuelles réclamations durée moyenne délais traitement."
+    },
+    {
+        "id": "4",
+        "categorie": "Réclamations",
+        "question": "Quelles réclamations sont encore en attente ?",
+        "page": "KPI_02",
+        "graphique": "Table",
+        "données": "Type de réclamation - Date création - Date - Agence - Délai d'attente - Priorité",
+        "motscles": "réclamations-en-attente urgences délais-priorité gestion-dossiers",
+        "explication": "Cette question appartient à la catégorie 'Réclamations'. Elle permet d'analyser 'Quelles réclamations sont encore en attente ?' en utilisant un Table. Les données exploitées sont : Type de réclamation - Date création - Date - Agence - Délai d'attente - Priorité. Ce KPI est utile pour comprendre réclamations en attente urgences délais priorité gestion dossiers."
+    },
+    {
+        "id": "5",
+        "categorie": "Réclamations",
+        "question": "Quels types de réclamations en attente sont les plus fréquents ?",
+        "page": "KPI_02",
+        "graphique": "Graphique en secteurs",
+        "données": "Nombre d'affaires - Type de réclamation",
+        "motscles": "types-réclamations réclamations-fréquentes catégories-problèmes",
+        "explication": "Cette question appartient à la catégorie 'Réclamations'. Elle permet d'analyser 'Quels types de réclamations en attente sont les plus fréquents ?' en utilisant un Graphique en secteurs. Les données exploitées sont : Nombre d'affaires - Type de réclamation. Ce KPI est utile pour comprendre types réclamations réclamations fréquentes catégories problèmes."
+    },
+    {
+        "id": "6",
+        "categorie": "Réclamations",
+        "question": "Quelle est le taux de réclamation en attente ces 15 derniers jours ?",
+        "page": "KPI_02",
+        "graphique": "Carte KPI",
+        "données": "Taux de réclamation - Date",
+        "motscles": "taux-réclamations réclamations-15-jours suivi-évolution",
+        "explication": "Cette question appartient à la catégorie 'Réclamations'. Elle permet d'analyser 'Quelle est le taux de réclamation en attente ces 15 derniers jours ?' en utilisant un Carte KPI. Les données exploitées sont : Taux de réclamation - Date. Ce KPI est utile pour comprendre taux réclamations réclamations 15 jours suivi évolution."
+    },
+    {
+        "id": "7",
+        "categorie": "Affaires",
+        "question": "Comment évoluent les affaires ouvertes et clôturées ?",
+        "page": "KPI_03",
+        "graphique": "Graphique en courbe",
+        "données": "Date - Nombre d'affaires crées - Nombre d'affaires clôturées",
+        "motscles": "évolution-affaires affaires-ouvertes affaires-clôturées",
+        "explication": "Cette question appartient à la catégorie 'Affaires'. Elle permet d'analyser 'Comment évoluent les affaires ouvertes et clôturées ?' en utilisant un Graphique en courbe. Les données exploitées sont : Date - Nombre d'affaires crées - Nombre d'affaires clôturées. Ce KPI est utile pour comprendre évolution affaires affaires ouvertes affaires clôturées."
+    },
+    {
+        "id": "8",
+        "categorie": "Affaires",
+        "question": "Quel pourcentage d'affaires est clôturé en moins de X jours ?",
+        "page": "KPI_03",
+        "graphique": "Carte KPI",
+        "données": "Taux d'affaire clôturées - Date",
+        "motscles": "affaires-clôturées taux-clôture délais-résolution",
+        "explication": "Cette question appartient à la catégorie 'Affaires'. Elle permet d'analyser 'Quel pourcentage d'affaires est clôturé en moins de X jours ?' en utilisant un Carte KPI. Les données exploitées sont : Taux d'affaire clôturées - Date. Ce KPI est utile pour comprendre affaires clôturées taux clôture délais résolution."
+    },
+    {
+        "id": "9",
+        "categorie": "Affaires",
+        "question": "Quelle est la répartition des affaires par agence ?",
+        "page": "KPI_03",
+        "graphique": "Graphiques à barres empilées",
+        "données": "Agence - Nombres d'affaires - Statut de l'affaire",
+        "motscles": "répartition-affaires agences-volume affaires-statut",
+        "explication": "Cette question appartient à la catégorie 'Affaires'. Elle permet d'analyser 'Quelle est la répartition des affaires par agence ?' en utilisant un Graphiques à barres empilées. Les données exploitées sont : Agence - Nombres d'affaires - Statut de l'affaire. Ce KPI est utile pour comprendre répartition affaires agences volume affaires statut."
+    },
+    {
+        "id": "10",
+        "categorie": "Factures",
+        "question": "Quel est le taux d’impayés actuel ?",
+        "page": "KPI_04",
+        "graphique": "Carte KPI",
+        "données": "Taux d'impayés",
+        "motscles": "taux-impayés factures-non-payées suivi-impayés",
+        "explication": "Cette question appartient à la catégorie 'Factures'. Elle permet d'analyser 'Quel est le taux d’impayés actuel ?' en utilisant un Carte KPI. Les données exploitées sont : Taux d'impayés. Ce KPI est utile pour comprendre taux impayés factures non payées suivi impayés."
+    },
+    {
+        "id": "11",
+        "categorie": "Factures",
+        "question": "Quels sont les montants impayés par agence ?",
+        "page": "KPI_04",
+        "graphique": "Graphiques à barres empilées",
+        "données": "Agence - Total factures impayées",
+        "motscles": "montants-impayés agences-dettes suivi-financier",
+        "explication": "Cette question appartient à la catégorie 'Factures'. Elle permet d'analyser 'Quels sont les montants impayés par agence ?' en utilisant un Graphiques à barres empilées. Les données exploitées sont : Agence - Total factures impayées. Ce KPI est utile pour comprendre montants impayés agences dettes suivi financier."
+    },
+    {
+        "id": "12",
+        "categorie": "Factures",
+        "question": "Comment évoluent les impayés chaque mois ?",
+        "page": "KPI_04",
+        "graphique": "Graphique en courbe",
+        "données": "Date - Nombre d'impayés restants - Date émission",
+        "motscles": "évolution-impayés suivi-mensuel dettes",
+        "explication": "Cette question appartient à la catégorie 'Factures'. Elle permet d'analyser 'Comment évoluent les impayés chaque mois ?' en utilisant un Graphique en courbe. Les données exploitées sont : Date - Nombre d'impayés restants - Date émission. Ce KPI est utile pour comprendre évolution impayés suivi mensuel dettes."
+    },
+    {
+        "id": "13",
+        "categorie": "Factures",
+        "question": "Que prévoit-on d'impayés pour les 3 prochains mois ?",
+        "page": "KPI_04",
+        "graphique": "Graphique en courbe",
+        "données": "Date - Nombre d'impayés restants - Date émission - Prévisions 3 mois prochains",
+        "motscles": "prévisions-impayés évolution-financière dettes-3-mois paiement-estimé",
+        "explication": "Cette question appartient à la catégorie 'Factures'. Elle permet d'analyser 'Que prévoit-on d'impayés pour les 3 prochains mois ?' en utilisant un Graphique en courbe. Les données exploitées sont : Date - Nombre d'impayés restants - Date émission - Prévisions 3 mois prochains. Ce KPI est utile pour comprendre prévisions impayés évolution financière dettes 3 mois paiement estimé."
+    },
+    {
+        "id": "14",
+        "categorie": "Factures",
+        "question": "Quel est le délai moyen de paiement des factures ?",
+        "page": "KPI_05",
+        "graphique": "Carte KPI",
+        "données": "Délai moyen paiement",
+        "motscles": "délai-moyen paiement-factures échéance-financière gestion-trésorerie",
+        "explication": "Cette question appartient à la catégorie 'Factures'. Elle permet d'analyser 'Quel est le délai moyen de paiement des factures ?' en utilisant un Carte KPI. Les données exploitées sont : Délai moyen paiement. Ce KPI est utile pour comprendre délai moyen paiement factures échéance financière gestion trésorerie."
+    },
+    {
+        "id": "15",
+        "categorie": "Factures",
+        "question": "Comment sont répartis les paiements en fonction du délai ?",
+        "page": "KPI_05",
+        "graphique": "Graphique en secteurs",
+        "données": "Intervalle paiement - Nombre de facture",
+        "motscles": "répartition-paiements délais-paiement segmentation-factures",
+        "explication": "Cette question appartient à la catégorie 'Factures'. Elle permet d'analyser 'Comment sont répartis les paiements en fonction du délai ?' en utilisant un Graphique en secteurs. Les données exploitées sont : Intervalle paiement - Nombre de facture. Ce KPI est utile pour comprendre répartition paiements délais paiement segmentation factures."
+    },
+    {
+        "id": "16",
+        "categorie": "Factures",
+        "question": "Quelle est l’évolution du délai moyen de paiement ?",
+        "page": "KPI_05",
+        "graphique": "Graphique en courbe",
+        "données": "Date - Total impayés par mois - Total des paiements effectués par mois",
+        "motscles": "évolution-paiement suivi-délai historique-facturation",
+        "explication": "Cette question appartient à la catégorie 'Factures'. Elle permet d'analyser 'Quelle est l’évolution du délai moyen de paiement ?' en utilisant un Graphique en courbe. Les données exploitées sont : Date - Total impayés par mois - Total des paiements effectués par mois. Ce KPI est utile pour comprendre évolution paiement suivi délai historique facturation."
+    },
+    {
+        "id": "17",
+        "categorie": "Factures",
+        "question": "Quelle est la date de paiement enregistré et clôturé ?",
+        "page": "KPI_05",
+        "graphique": "Carte KPI",
+        "données": "Date de paiement enregistré - Date de clôture enregistré",
+        "motscles": "date-paiement validation-transaction clôture-factures",
+        "explication": "Cette question appartient à la catégorie 'Factures'. Elle permet d'analyser 'Quelle est la date de paiement enregistré et clôturé ?' en utilisant un Carte KPI. Les données exploitées sont : Date de paiement enregistré - Date de clôture enregistré. Ce KPI est utile pour comprendre date paiement validation transaction clôture factures."
+    },
+    {
+        "id": "18",
+        "categorie": "Paiements",
+        "question": "Quel est le pourcentage de prélèvements rejetés ?",
+        "page": "KPI_06",
+        "graphique": "Carte KPI",
+        "données": "Taux de prélèvements rejetés",
+        "motscles": "taux-rejets prélèvements-non-validés gestion-impayés",
+        "explication": "Cette question appartient à la catégorie 'Paiements'. Elle permet d'analyser 'Quel est le pourcentage de prélèvements rejetés ?' en utilisant un Carte KPI. Les données exploitées sont : Taux de prélèvements rejetés. Ce KPI est utile pour comprendre taux rejets prélèvements non validés gestion impayés."
+    },
+    {
+        "id": "19",
+        "categorie": "Paiements",
+        "question": "Quels sont les modes de paiement les plus rejetés ?",
+        "page": "KPI_06",
+        "graphique": "Segments",
+        "données": "Mode de paiement",
+        "motscles": "modes-paiement taux-rejet comparaison-transactions",
+        "explication": "Cette question appartient à la catégorie 'Paiements'. Elle permet d'analyser 'Quels sont les modes de paiement les plus rejetés ?' en utilisant un Segments. Les données exploitées sont : Mode de paiement. Ce KPI est utile pour comprendre modes paiement taux rejet comparaison transactions."
+    },
+    {
+        "id": "20",
+        "categorie": "Paiements",
+        "question": "Comment évoluent les rejets de prélèvements par mois ?",
+        "page": "KPI_06",
+        "graphique": "Graphique en aires empilé",
+        "données": "Date - Total payés par mois - Total impayés par mois",
+        "motscles": "évolution-rejets suivi-prélèvements mensuel",
+        "explication": "Cette question appartient à la catégorie 'Paiements'. Elle permet d'analyser 'Comment évoluent les rejets de prélèvements par mois ?' en utilisant un Graphique en aires empilé. Les données exploitées sont : Date - Total payés par mois - Total impayés par mois. Ce KPI est utile pour comprendre évolution rejets suivi prélèvements mensuel."
+    },
+    {
+        "id": "21",
+        "categorie": "Paiements",
+        "question": "Comment évoluent la répartition des paiements en fonction du délai classé par groupe de facture ?",
+        "page": "KPI_06",
+        "graphique": "Histogramme groupé",
+        "données": "Impayés par tranche de 100 - Nombre de factures",
+        "motscles": "répartition-paiements délais-paiement factures-groupées",
+        "explication": "Cette question appartient à la catégorie 'Paiements'. Elle permet d'analyser 'Comment évoluent la répartition des paiements en fonction du délai classé par groupe de facture ?' en utilisant un Histogramme groupé. Les données exploitées sont : Impayés par tranche de 100 - Nombre de factures. Ce KPI est utile pour comprendre répartition paiements délais paiement factures groupées."
+    },
+    {
+        "id": "22",
+        "categorie": "Compteurs",
+        "question": "Taux de compteurs n'ont pas été relevés depuis 1 an ?",
+        "page": "KPI_07",
+        "graphique": "Carte KPI : % de compteurs sans relève",
+        "données": "Taux de compteur sans relève - Date",
+        "motscles": "compteurs taux-sans-relève suivi-relevé",
+        "explication": "Cette question appartient à la catégorie 'Compteurs'. Elle permet d'analyser 'Taux de compteurs n'ont pas été relevés depuis 1 an ?' en utilisant un Carte KPI : % de compteurs sans relève. Les données exploitées sont : Taux de compteur sans relève - Date. Ce KPI est utile pour comprendre compteurs taux sans relève suivi relevé."
+    },
+    {
+        "id": "23",
+        "categorie": "Compteurs",
+        "question": "Quels secteurs ont le plus de compteurs sans relève ?",
+        "page": "KPI_07",
+        "graphique": "Segment",
+        "données": "Secteur",
+        "motscles": "compteurs secteurs-affectés absence-relevé",
+        "explication": "Cette question appartient à la catégorie 'Compteurs'. Elle permet d'analyser 'Quels secteurs ont le plus de compteurs sans relève ?' en utilisant un Segment. Les données exploitées sont : Secteur. Ce KPI est utile pour comprendre compteurs secteurs affectés absence relevé."
+    },
+    {
+        "id": "24",
+        "categorie": "Compteurs",
+        "question": "Où sont situés les compteurs sans relève ?",
+        "page": "KPI_07",
+        "graphique": "Carte géographique",
+        "données": "Numéro compteur - Ville - Latitude - Longitude - Secteur - Date de relève - Numéro de tournée",
+        "motscles": "compteurs localisation-relevé absence-intervention",
+        "explication": "Cette question appartient à la catégorie 'Compteurs'. Elle permet d'analyser 'Où sont situés les compteurs sans relève ?' en utilisant un Carte géographique. Les données exploitées sont : Numéro compteur - Ville - Latitude - Longitude - Secteur - Date de relève - Numéro de tournée. Ce KPI est utile pour comprendre compteurs localisation relevé absence intervention."
+    },
+    {
+        "id": "25",
+        "categorie": "Compteurs",
+        "question": "Rechercher un compteur ?",
+        "page": "KPI_07",
+        "graphique": "Text filter",
+        "données": "Numéro compteur",
+        "motscles": "compteurs recherche-numéro suivi-distribution",
+        "explication": "Cette question appartient à la catégorie 'Compteurs'. Elle permet d'analyser 'Rechercher un compteur ?' en utilisant un Text filter. Les données exploitées sont : Numéro compteur. Ce KPI est utile pour comprendre compteurs recherche numéro suivi distribution."
+    },
+    {
+        "id": "26",
+        "categorie": "Courriers",
+        "question": "Quel pourcentage de courriers est revenu en PND ?",
+        "page": "KPI_08",
+        "graphique": "Carte KPI : % de courriers revenus en PND",
+        "données": "Taux de courriers revenus en PND (Pli non distribué)",
+        "motscles": "courriers taux-retour PND non-distribué",
+        "explication": "Cette question appartient à la catégorie 'Courriers'. Elle permet d'analyser 'Quel pourcentage de courriers est revenu en PND ?' en utilisant un Carte KPI : % de courriers revenus en PND. Les données exploitées sont : Taux de courriers revenus en PND (Pli non distribué). Ce KPI est utile pour comprendre courriers taux retour PND non distribué."
+    },
+    {
+        "id": "27",
+        "categorie": "Courriers",
+        "question": "Quelles agences ont le plus de courriers revenus en PND ?",
+        "page": "KPI_08",
+        "graphique": "Graphique en anneau",
+        "données": "Agence - Nombre de courrier revenu en PND",
+        "motscles": "courriers agences-impacts taux-PND",
+        "explication": "Cette question appartient à la catégorie 'Courriers'. Elle permet d'analyser 'Quelles agences ont le plus de courriers revenus en PND ?' en utilisant un Graphique en anneau. Les données exploitées sont : Agence - Nombre de courrier revenu en PND. Ce KPI est utile pour comprendre courriers agences impacts taux PND."
+    },
+    {
+        "id": "28",
+        "categorie": "Courriers",
+        "question": "Comment évolue le nombre de PND chaque mois ?",
+        "page": "KPI_08",
+        "graphique": "Histogramme empilé",
+        "données": "Date - Nombre de courrier revenu en PND",
+        "motscles": "courriers évolution-mensuelle suivi-PND",
+        "explication": "Cette question appartient à la catégorie 'Courriers'. Elle permet d'analyser 'Comment évolue le nombre de PND chaque mois ?' en utilisant un Histogramme empilé. Les données exploitées sont : Date - Nombre de courrier revenu en PND. Ce KPI est utile pour comprendre courriers évolution mensuelle suivi PND."
+    },
+    {
+        "id": "29",
+        "categorie": "Courriers",
+        "question": "Quel est le délai moyen de retour des courriers en PND ?",
+        "page": "KPI_08",
+        "graphique": "Carte KPI",
+        "données": "Délai moyen retour des courriers en PND",
+        "motscles": "courriers délai-retour PND-suivi",
+        "explication": "Cette question appartient à la catégorie 'Courriers'. Elle permet d'analyser 'Quel est le délai moyen de retour des courriers en PND ?' en utilisant un Carte KPI. Les données exploitées sont : Délai moyen retour des courriers en PND. Ce KPI est utile pour comprendre courriers délai retour PND suivi."
+    },
+    {
+        "id": "30",
+        "categorie": "Factures",
+        "question": "Quel est le montant total facturé et réglé ?",
+        "page": "KPI_09",
+        "graphique": "Carte KPI",
+        "données": "Montant total facturé/réglé/restant",
+        "motscles": "factures montant-total paiements-effectués",
+        "explication": "Cette question appartient à la catégorie 'Factures'. Elle permet d'analyser 'Quel est le montant total facturé et réglé ?' en utilisant un Carte KPI. Les données exploitées sont : Montant total facturé/réglé/restant. Ce KPI est utile pour comprendre factures montant total paiements effectués."
+    },
+    {
+        "id": "31",
+        "categorie": "Factures",
+        "question": "Quels sont les statuts des factures ?",
+        "page": "KPI_09",
+        "graphique": "Graphique en secteurs",
+        "données": "Statut de l'affaire - Nombre d'affaire par statut",
+        "motscles": "factures statuts-gestion suivi-facturation",
+        "explication": "Cette question appartient à la catégorie 'Factures'. Elle permet d'analyser 'Quels sont les statuts des factures ?' en utilisant un Graphique en secteurs. Les données exploitées sont : Statut de l'affaire - Nombre d'affaire par statut. Ce KPI est utile pour comprendre factures statuts gestion suivi facturation."
+    },
+    {
+        "id": "32",
+        "categorie": "Factures",
+        "question": "Quels sont les détails des règlements par titre et rôle ?",
+        "page": "KPI_09",
+        "graphique": "Table",
+        "données": "Date - Numéro de facture - Montant total facturé/réglé/restant",
+        "motscles": "factures détails-règlements historique-transactions",
+        "explication": "Cette question appartient à la catégorie 'Factures'. Elle permet d'analyser 'Quels sont les détails des règlements par titre et rôle ?' en utilisant un Table. Les données exploitées sont : Date - Numéro de facture - Montant total facturé/réglé/restant. Ce KPI est utile pour comprendre factures détails règlements historique transactions."
+    },
+    {
+        "id": "33",
+        "categorie": "Général",
+        "question": "Quels sont les KPI les plus critiques en ce moment ?",
+        "page": "Tableau_Bord_General",
+        "graphique": "Carte KPI",
+        "données": "Taux de réclamations clôturées/attente/cours - Délai moyen de paiement - Taux de compteur sans relève",
+        "motscles": "KPI-critiques performance-indicateurs suivi-urgence",
+        "explication": "Cette question appartient à la catégorie 'Général'. Elle permet d'analyser 'Quels sont les KPI les plus critiques en ce moment ?' en utilisant un Carte KPI. Les données exploitées sont : Taux de réclamations clôturées/attente/cours - Délai moyen de paiement - Taux de compteur sans relève. Ce KPI est utile pour comprendre KPI critiques performance indicateurs suivi urgence."
+    },
+    {
+        "id": "34",
+        "categorie": "Général",
+        "question": "Quelle est l’évolution globale des réclamations impayés et paiements ?",
+        "page": "Tableau_Bord_General",
+        "graphique": "Graphique combiné",
+        "données": "Tendance des réclamations - impayés et paiements",
+        "motscles": "évolution-réclamations suivi-impayés tendances-paiements",
+        "explication": "Cette question appartient à la catégorie 'Général'. Elle permet d'analyser 'Quelle est l’évolution globale des réclamations impayés et paiements ?' en utilisant un Graphique combiné. Les données exploitées sont : Tendance des réclamations - impayés et paiements. Ce KPI est utile pour comprendre évolution réclamations suivi impayés tendances paiements."
+    },
+    {
+        "id": "35",
+        "categorie": "Général",
+        "question": "Quels sont les secteurs ou agences les plus impactés par les anomalies ?",
+        "page": "Tableau_Bord_General",
+        "graphique": "Heatmap : Impact des secteurs/agences",
+        "données": "secteurs agences anomalies impact",
+        "motscles": "impact-anomalies secteurs-affectés suivi-agences",
+        "explication": "Cette question appartient à la catégorie 'Général'. Elle permet d'analyser 'Quels sont les secteurs ou agences les plus impactés par les anomalies ?' en utilisant un Heatmap : Impact des secteurs/agences. Les données exploitées sont : secteurs agences anomalies impact. Ce KPI est utile pour comprendre impact anomalies secteurs affectés suivi agences."
+    },
+    {
+        "id": "36",
+        "categorie": "Général",
+        "question": "Quels indicateurs nécessitent une action immédiate ?",
+        "page": "Tableau_Bord_General",
+        "graphique": "Carte KPI + Alerte : Indicateurs nécessitant une action",
+        "données": "indicateurs action immédiate",
+        "motscles": "indicateurs-critiques suivi-urgence alerte-action",
+        "explication": "Cette question appartient à la catégorie 'Général'. Elle permet d'analyser 'Quels indicateurs nécessitent une action immédiate ?' en utilisant un Carte KPI + Alerte : Indicateurs nécessitant une action. Les données exploitées sont : indicateurs action immédiate. Ce KPI est utile pour comprendre indicateurs critiques suivi urgence alerte action."
+    },
+    {
+        "id": "37",
+        "categorie": "Général",
+        "question": "Quelle est la performance globale des services sur les 6 derniers mois ?",
+        "page": "Tableau_Bord_General",
+        "graphique": "Graphique en courbe",
+        "données": "Date - Total factures impayées",
+        "motscles": "performance-services suivi-mensuel efficacité-opérationnelle",
+        "explication": "Cette question appartient à la catégorie 'Général'. Elle permet d'analyser 'Quelle est la performance globale des services sur les 6 derniers mois ?' en utilisant un Graphique en courbe. Les données exploitées sont : Date - Total factures impayées. Ce KPI est utile pour comprendre performance services suivi mensuel efficacité opérationnelle."
+    }
+]

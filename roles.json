@@ -1,0 +1,20 @@
+{
+    "roles": {
+        "admin": {
+            "categories": ["Réclamations", "Affaires", "Factures", "Paiements", "Compteurs", "Courriers", "Général"],
+            "graphique": "all"
+        },
+        "releveur": {
+            "categories": ["Général", "Compteurs"],
+            "graphique": "all"
+        },
+        "finance": {
+            "categories": ["Général", "Factures", "Paiements"],
+            "graphique": "all"
+        },
+        "service_client": {
+            "categories": ["Général", "Réclamations", "Courriers"],
+            "graphique": "all"
+        }
+    }
+}

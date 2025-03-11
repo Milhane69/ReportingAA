@@ -1,0 +1,7 @@
+{
+    "users": {
+        "milhane": {"password": "Annemasse74", "role": "admin"},
+        "stephane": {"password": "Agglo", "role": "releveur"},
+        "christian": {"password" : "UneAgglo", "role": "service_client"}
+    }
+}

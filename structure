@@ -1,0 +1,17 @@
+/ProjetPowerBI/
+│── dashboard.html
+│── index.html
+│── styles.css
+│── script.js
+│── login.js
+│── logout.js
+│── ticket.js
+│── ticket.html
+│── DataIA.json  <--- 📌 Fichier contenant les questions
+│── assets/
+│   ├── logo.png
+│   ├── favicon.ico
+│── users.json  <--- 📌 Contient les utilisateurs et mots de passe
+│── chatbot.js
+│── chatbot.css
+

@@ -1,0 +1,535 @@
+/* Styles généraux */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eef2f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Fond avec effet bulles */
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.3) 5%, transparent 20%),
+                      radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.2) 5%, transparent 20%),
+                      radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.15) 5%, transparent 20%);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+    background-position: left top, right bottom, center center;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* Header */
+header {
+    background-color: #005A9C;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 10;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Menu déroulant */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    min-width: 200px;
+    padding: 10px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    border-radius: 6px;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: background 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content ul li {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #005A9C;
+    background: #f9f9f9;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown-content ul li:hover {
+    background-color: #d9e6f2;
+    color: #003f7f;
+}
+
+
+/* Dashboard */
+.dashboard-container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+h3 {
+    color: #005A9C;
+    margin-bottom: 15px;
+}
+
+/* Champs et Boutons */
+select, input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #f9f9f9;
+    transition: border 0.3s;
+}
+
+select:focus, input:focus, textarea:focus {
+    border: 2px solid #005A9C;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #005A9C;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+button:hover {
+    background-color: #004080;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+/* Power BI Frame */
+#powerbi-frame {
+    width: 100%;
+    height: 700px;
+    border: none;
+    margin-top: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Mots-clés cliquables */
+#keywords-container {
+    margin-top: 10px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    transition: box-shadow 0.3s;
+}
+
+#keywords-container:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.keyword-item {
+    padding: 8px 12px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.keyword-item:hover {
+    background-color: #c0c0c0;
+    transform: scale(1.1);
+}
+
+/* Page de connexion */
+.login-container {
+    width: 30%;
+    margin: 100px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #005A9C;
+    margin-bottom: 20px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.login-container button {
+    background-color: #005A9C;
+    color: white;
+    font-size: 16px;
+    padding: 12px;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #004080;
+}
+
+/* Styles pour la page de création de ticket */
+.ticket-container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.ticket-container h2 {
+    color: #005A9C;
+    margin-bottom: 10px;
+}
+
+.ticket-container p {
+    font-size: 14px;
+    color: #666;
+}
+
+.ticket-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ticket-container label {
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+
+.ticket-container input, .ticket-container textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #f9f9f9;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+.ticket-container input:focus, .ticket-container textarea:focus {
+    border: 2px solid #005A9C;
+    box-shadow: 0px 4px 10px rgba(0, 90, 156, 0.2);
+    outline: none;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-submit {
+    width: 48%;
+    padding: 12px;
+    background-color: #005A9C;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.btn-submit:hover {
+    background-color: #004080;
+    transform: translateY(-2px);
+}
+
+.btn-back {
+    width: 48%;
+    padding: 12px;
+    text-align: center;
+    background-color: #ccc;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.btn-back:hover {
+    background-color: #bbb;
+    transform: translateY(-2px);
+}
+
+/* Adaptation mobile */
+@media screen and (max-width: 768px) {
+    /* Header en colonne */
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* Ajustement du conteneur principal */
+    .dashboard-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    /* Boutons et champs ajustés */
+    input, select, textarea, button {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /* Ajustement du menu déroulant */
+    .dropdown-content {
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Agrandissement des éléments cliquables */
+    .dropdown-content a, .dropdown-content ul li {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    /* Iframe Power BI */
+    #powerbi-frame {
+        height: 500px;
+    }
+}
+
+/* Styles généraux */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eef2f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Styles pour le formulaire de création de compte */
+.signup-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    width: 400px;
+    text-align: center;
+}
+
+.signup-container h2 {
+    color: #005A9C;
+    margin-bottom: 15px;
+}
+
+#signup-form input,
+#signup-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+}
+
+#signup-form button {
+    background: #005A9C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+#signup-form button:hover {
+    background: #004080;
+}
+
+.signup-container h2 {
+    margin-bottom: 15px;
+    color: #005A9C;
+    font-size: 20px;
+}
+
+/* 📌 Améliorations pour le mode sombre et la lisibilité */
+
+/* 🌙 Mode sombre amélioré */
+.dark-mode {
+    background-color: #181818;
+    color: #f5f5f5;
+}
+
+/* 📂 Menu déroulant en mode sombre */
+.dark-mode .dropdown-content {
+    background-color: #222;
+    color: white;
+    border: 1px solid #444;
+}
+.dark-mode .dropdown-content a {
+    color: white;
+}
+.dark-mode .dropdown-content a:hover {
+    background-color: #444;
+}
+
+/* 🏠 Dashboard en mode sombre */
+.dark-mode .dashboard-container {
+    background-color: #242424;
+    color: #e0e0e0;
+    border: 1px solid #333;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* 📊 Lisibilité du texte dans le chatbot */
+.dark-mode .chatbot-container {
+    background-color: #222;
+    border: 1px solid #444;
+}
+.dark-mode .chatbot-header {
+    background-color: #3a3a3a;
+    padding: 12px;
+    font-weight: bold;
+    border-bottom: 1px solid #555;
+}
+.dark-mode .chatbot-message {
+    background-color: #333;
+    color: #f1f1f1;
+    border-radius: 10px;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+/* 🖍️ Ajustement de la couleur des liens dans le chatbot */
+.dark-mode .chatbot-message a {
+    color: #4a90e2; /* Bleu plus clair et lisible */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* 🌟 Amélioration des mots-clés */
+.dark-mode .keyword-item {
+    background-color: #005A9C; /* Bleu plus contrasté */
+    color: white;
+    border-radius: 5px;
+    padding: 8px;
+    transition: background 0.3s, transform 0.2s;
+}
+.dark-mode .keyword-item:hover {
+    background-color: #007BFF; /* Bleu plus clair */
+    transform: scale(1.05);
+}
+
+/* 🔘 Bouton mode sombre amélioré */
+#dark-mode-toggle {
+    background: linear-gradient(135deg, #333, #444);
+    color: white;
+    border: none;
+    padding: 6px 12px; /* Taille réduite */
+    border-radius: 12px;
+    font-size: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+    width: auto;
+    max-width: 160px; /* Réduction de la largeur */
+}
+#dark-mode-toggle:hover {
+    background: linear-gradient(135deg, #444, #555);
+    transform: scale(1.05);
+}
+
+/* ✨ Animation des suggestions identique en mode clair et sombre */
+.suggestion-item {
+    background-color: #f1f1f1;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background 0.3s, transform 0.2s;
+}
+.suggestion-item:hover {
+    background-color: #d9e6f2;
+    transform: scale(1.1);
+}
+.dark-mode .suggestion-item {
+    background-color: #333;
+}
+.dark-mode .suggestion-item:hover {
+    background-color: #555;
+    transform: scale(1.1);
+}

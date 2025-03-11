@@ -1,0 +1,38 @@
+id,categorie,question,page,graphique,données,motscles
+1,Réclamations,Quelle est la durée moyenne de traitement des réclamations ?,KPI 01,Nuage de points,Date de création - Moyenne de temps de traitement par journée - Type de réclamation - Nombres de réclamations - Agence,temps délai réclamation durée moyenne service client satisfaction résolution 
+2,Réclamations,Comment évoluent les réclamations par mois ?,KPI 01,Histogramme groupé,Date - Nombre de réclamation,réclamations évolution mensuelle mois 
+3,Réclamations,Quels sont les tendances mensuelles des réclamations et leur durée moyenne par année ?,KPI 01,Graphique en courbe, Date - Nombre de réclamation - Temps moyen de traitement,réclamations tendances mensuelle durée moyenne annuelle 
+4,Réclamations,Quelles réclamations sont encore en attente ?,KPI 02,Table,Type de réclamation - Date création - Date - Agence - Délai d'attente - Priorité,réclamations en attente type date agence délai priorité 
+5,Réclamations,Quels types de réclamations en attente sont les plus fréquents ?,KPI 02,Graphique en secteurs,Nombre d'affaires - Type de réclamation,réclamations types en attente fréquents 
+6,Réclamations,Quelle est le taux de réclamation en attente ces 15 derniers jours ?,KPI 02,Carte KPI,Taux de réclamation - Date,réclamations taux en attente 15 derniers jours 
+7,Affaires,Comment évoluent les affaires ouvertes et clôturées ?,KPI 03,Graphique en courbe,Date - Nombre d'affaires crées - Nombre d'affaires clôturées,affaires évolution ouvertes clôturées 
+8,Affaires,Quel pourcentage d'affaires est clôturé en moins de X jours ?,KPI 03,Carte KPI,Taux d'affaire clôturées - Date,affaires pourcentage clôturé moins de X jours 
+9,Affaires,Quelle est la répartition des affaires par agence ?,KPI 03,Graphiques à barres empilées,Agence - Nombres d'affaires - Statut de l'affaire,affaires répartition agence statut 
+10,Factures,Quel est le taux d’impayés actuel ?,KPI 04,Carte KPI,Taux d'impayés,factures impayés taux actuel 
+11,Factures,Quels sont les montants impayés par agence ?,KPI 04,Graphiques à barres empilées,Agence - Total factures impayées,factures montants impayés agence 
+12,Factures,Comment évoluent les impayés chaque mois ?,KPI 04,Graphique en courbe,Date - Nombre d'impayés restants - Date émission,factures impayés évolution chaque mois 
+13,Factures,Que prévoit-on d'impayés pour les 3 prochains mois ?,KPI 04,Graphique en courbe,Date - Nombre d'impayés restants - Date émission - Prévisions 3 mois prochains,factures impayés prévisions 3 prochains mois 
+14,Factures,Quel est le délai moyen de paiement des factures ?,KPI 05,Carte KPI,Délai moyen paiement,factures délai moyen paiement 
+15,Factures,Comment sont répartis les paiements en fonction du délai ?,KPI 05,Graphique en secteurs,Intervalle paiement - Nombre de facture,factures répartition paiements délai 
+16,Factures,Quelle est l’évolution du délai moyen de paiement ?,KPI 05,Graphique en courbe,Date - Total impayés par mois - Total des paiements effectués par mois,factures évolution délai moyen paiement 
+17,Factures,Quelle est la date de paiement enregistré et clôturé ?,KPI 05,Carte KPI,Date de paiement enregistré - Date de clôture enregistré,factures date paiement enregistré clôturé 
+18,Paiements,Quel est le pourcentage de prélèvements rejetés ?,KPI 06,Carte KPI,Taux de prélèvements rejetés,paiements pourcentage prélèvements rejetés 
+19,Paiements,Quels sont les modes de paiement les plus rejetés ?,KPI 06,Segments,Mode de paiement,paiements modes rejetés 
+20,Paiements,Comment évoluent les rejets de prélèvements par mois ?,KPI 06,Graphique en aires empilé,Date - Total payés par mois - Total impayés par mois,paiements évolution rejets prélèvements mensuel 
+21,Paiements,Comment évoluent la répartition des paiements en fonction du délai classé par groupe de facture ?,KPI 06,Histogramme groupé,Impayés par tranche de 100 - Nombre de factures,paiements répartition délai groupe de factures 
+22,Compteurs,Taux de compteurs n'ont pas été relevés depuis 1 an ?,KPI 07,Carte KPI : % de compteurs sans relève,Taux de compteur sans relève - Date,compteurs taux sans relève 1 an 
+23,Compteurs,Quels secteurs ont le plus de compteurs sans relève ?,KPI 07,Segment,Secteur,compteurs secteurs sans relève 
+24,Compteurs,Où sont situés les compteurs sans relève ?,KPI 07,Carte géographique,Numéro compteur - Ville - Latitude - Longitude - Secteur - Date de relève - Numéro de tournée,compteurs situation sans relève 
+25,Compteurs,Rechercher un compteur ?,KPI 07,Text filter,Numéro compteur,compteurs recherche numéro compteur 
+26,Courriers,Quel pourcentage de courriers est revenu en PND ?,KPI 08,Carte KPI : % de courriers revenus en PND,Taux de courriers revenus en PND (Pli non distribué),courriers pourcentage PND pli non distribué 
+27,Courriers,Quelles agences ont le plus de courriers revenus en PND ?,KPI 08,Graphique en anneau,Agence - Nombre de courrier revenu en PND,courriers agences PND 
+28,Courriers,Comment évolue le nombre de PND chaque mois ?,KPI 08,Histogramme empilé,Date - Nombre de courrier revenu en PND,courriers évolution PND mensuel 
+29,Courriers,Quel est le délai moyen de retour des courriers en PND ?,KPI 08,Carte KPI,Délai moyen retour des courriers en PND,courriers délai moyen retour PND 
+30,Factures,Quel est le montant total facturé et réglé ?,KPI 09,Carte KPI,Montant total facturé/réglé/restant,factures montant total facturé réglé 
+31,Factures,Quels sont les statuts des factures ?,KPI 09,Graphique en secteurs,Statut de l'affaire - Nombre d'affaire par statut,factures statuts nombre d'affaires 
+32,Factures,Quels sont les détails des règlements par titre et rôle ?,KPI 09,Table,Date - Numéro de facture - Montant total facturé/réglé/restant,factures détails règlements 
+33,Général,Quels sont les KPI les plus critiques en ce moment ?,Tableau_Bord_General,Carte KPI,Taux de réclamations clôturées/attente/cours - Délai moyen de paiement - Taux de compteur sans relève,KPI critiques 
+34,Général,Quelle est l’évolution globale des réclamations impayés et paiements ?,Tableau_Bord_General,Graphique combiné,Tendance des réclamations - impayés et paiements,évolution réclamations impayés paiements 
+35,Général,Quels sont les secteurs ou agences les plus impactés par les anomalies ?,Tableau_Bord_General,Heatmap : Impact des secteurs/agences,secteurs agences anomalies impact 
+36,Général,Quels indicateurs nécessitent une action immédiate ?,Tableau_Bord_General,Carte KPI + Alerte : Indicateurs nécessitant une action,indicateurs action immédiate 
+37,Général,Quelle est la performance globale des services sur les 6 derniers mois ?,Tableau_Bord_General,Graphique en courbe,Date - Total factures impayées,performance services 6 derniers mois
