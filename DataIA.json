@@ -1,336 +1,362 @@
 [
     {
         "id": "1",
-        "categorie": "Réclamations",
-        "question": "Quelle est la durée moyenne de traitement des réclamations ?",
-        "page": "KPI_01",
-        "graphique": "Nuage de points",
-        "données": "Date de création - Moyenne de temps de traitement par journée - Type de réclamation - Nombres de réclamations - Agence",
-        "motscles": "durée-traitement réclamations service-client satisfaction délais-résolution"
+        "categorie": "Général",
+        "question": "Quels sont les indicateurs clés de performance actuels ?",
+        "page": "Tableau_Bord_General",
+        "graphique": "Carte KPI",
+        "données": "Taux de réclamations clôturées/en cours - Délai moyen de paiement - Taux de compteurs sans relève",
+        "motscles": "KPI performance suivi-global reporting"
     },
     {
         "id": "2",
-        "categorie": "Réclamations",
-        "question": "Comment évoluent les réclamations par mois ?",
-        "page": "KPI_01",
-        "graphique": "Histogramme groupé",
-        "données": "Date - Nombre de réclamation",
-        "motscles": "évolution-réclamations tendances-mensuelles volume-reclamations"
+        "categorie": "Général",
+        "question": "Comment évolue le taux de réclamations clôturées et en cours ?",
+        "page": "Tableau_Bord_General",
+        "graphique": "Graphique en courbe",
+        "données": "Date - Taux de réclamations clôturées - Taux de réclamations en cours",
+        "motscles": "évolution réclamations clôturées en-cours satisfaction-client"
     },
     {
         "id": "3",
-        "categorie": "Réclamations",
-        "question": "Quels sont les tendances mensuelles des réclamations et leur durée moyenne par année ?",
-        "page": "KPI_01",
+        "categorie": "Général",
+        "question": "Quelle est la tendance des factures impayées au cours des 6 derniers mois ?",
+        "page": "Tableau_Bord_General",
         "graphique": "Graphique en courbe",
-        "données": "Date - Nombre de réclamation - Temps moyen de traitement",
-        "motscles": "tendances-annuelles réclamations durée-moyenne délais-traitement"
+        "données": "Date - Nombre de factures impayées",
+        "motscles": "factures impayées évolution dettes"
     },
     {
         "id": "4",
-        "categorie": "Réclamations",
-        "question": "Quelles réclamations sont encore en attente ?",
-        "page": "KPI_02",
-        "graphique": "Table",
-        "données": "Type de réclamation - Date création - Date - Agence - Délai d'attente - Priorité",
-        "motscles": "réclamations-en-attente urgences délais-priorité gestion-dossiers"
+        "categorie": "Général",
+        "question": "Quelle est la répartition des affaires par statut ?",
+        "page": "Tableau_Bord_General",
+        "graphique": "Graphique en barres",
+        "données": "Nombre d’affaires - Statut (Clôturée / En cours)",
+        "motscles": "affaires répartition statut suivi-gestion"
     },
     {
         "id": "5",
-        "categorie": "Réclamations",
-        "question": "Quels types de réclamations en attente sont les plus fréquents ?",
-        "page": "KPI_02",
-        "graphique": "Graphique en secteurs",
-        "données": "Nombre d'affaires - Type de réclamation",
-        "motscles": "types-réclamations réclamations-fréquentes catégories-problèmes"
+        "categorie": "Général",
+        "question": "Quels indicateurs nécessitent une action immédiate ?",
+        "page": "Tableau_Bord_General",
+        "graphique": "Carte KPI + Alerte",
+        "données": "Indicateurs critiques nécessitant une action",
+        "motscles": "indicateurs-critiques suivi-urgence alerte-action"
     },
     {
         "id": "6",
-        "categorie": "Réclamations",
-        "question": "Quelle est le taux de réclamation en attente ces 15 derniers jours ?",
-        "page": "KPI_02",
-        "graphique": "Carte KPI",
-        "données": "Taux de réclamation - Date",
-        "motscles": "taux-réclamations réclamations-15-jours suivi-évolution"
+        "categorie": "Général",
+        "question": "Quelle est la performance globale des services sur les 6 derniers mois ?",
+        "page": "Tableau_Bord_General",
+        "graphique": "Graphique en courbe",
+        "données": "Date - Evolution des KPI principaux",
+        "motscles": "performance services suivi gestion"
     },
     {
         "id": "7",
-        "categorie": "Affaires",
-        "question": "Comment évoluent les affaires ouvertes et clôturées ?",
-        "page": "KPI_03",
-        "graphique": "Graphique en courbe",
-        "données": "Date - Nombre d'affaires crées - Nombre d'affaires clôturées",
-        "motscles": "évolution-affaires affaires-ouvertes affaires-clôturées"
+        "categorie": "Général",
+        "question": "Quels sont les secteurs les plus impactés par les anomalies ?",
+        "page": "Tableau_Bord_General",
+        "graphique": "Heatmap",
+        "données": "Secteurs - Anomalies relevées",
+        "motscles": "anomalies secteurs suivi gestion"
     },
     {
         "id": "8",
         "categorie": "Affaires",
-        "question": "Quel pourcentage d'affaires est clôturé en moins de X jours ?",
+        "question": "Comment évolue le nombre d'affaires ouvertes et clôturées ?",
         "page": "KPI_03",
-        "graphique": "Carte KPI",
-        "données": "Taux d'affaire clôturées - Date",
-        "motscles": "affaires-clôturées taux-clôture délais-résolution"
+        "graphique": "Graphique en courbe",
+        "données": "Date - Nombre d'affaires ouvertes - Nombre d'affaires clôturées",
+        "motscles": "affaires évolution suivi"
     },
     {
         "id": "9",
         "categorie": "Affaires",
-        "question": "Quelle est la répartition des affaires par agence ?",
+        "question": "Quelle est la répartition des affaires en attente par type ?",
         "page": "KPI_03",
-        "graphique": "Graphiques à barres empilées",
-        "données": "Agence - Nombres d'affaires - Statut de l'affaire",
-        "motscles": "répartition-affaires agences-volume affaires-statut"
+        "graphique": "Graphique en secteurs",
+        "données": "Type d'affaire - Nombre d'affaires en attente",
+        "motscles": "affaires en attente classification"
     },
     {
         "id": "10",
+        "categorie": "Affaires",
+        "question": "Quelle est la répartition des affaires en attente par type ?",
+        "page": "KPI_03",
+        "graphique": "Graphique en barres",
+        "données": "Type d'affaire - Nombre d'affaires en attente",
+        "motscles": "affaires en-attente répartition suivi"
+    },
+    {
+        "id": "11",
+        "categorie": "Compteurs",
+        "question": "Quel est le pourcentage de compteurs sans relève depuis 1 an ?",
+        "page": "KPI_07",
+        "graphique": "Carte KPI",
+        "données": "Taux de compteurs sans relève",
+        "motscles": "compteurs relève suivi"
+    },
+    {
+        "id": "12",
+        "categorie": "Compteurs",
+        "question": "Où sont situés les compteurs sans relève ?",
+        "page": "KPI_07",
+        "graphique": "Carte géographique",
+        "données": "Numéro de compteur - Ville - Latitude - Longitude",
+        "motscles": "compteurs localisation intervention"
+    },
+    {
+        "id": "13",
+        "categorie": "Compteurs",
+        "question": "Quels secteurs ont le plus de compteurs sans relève ?",
+        "page": "KPI_07",
+        "graphique": "Graphique en barres",
+        "données": "Secteur - Nombre de compteurs sans relève",
+        "motscles": "compteurs relève-secteurs suivi"
+    },
+    {
+        "id": "14",
+        "categorie": "Courriers",
+        "question": "Quel pourcentage de courriers est revenu en PND ?",
+        "page": "KPI_08",
+        "graphique": "Carte KPI",
+        "données": "Taux de courriers en PND",
+        "motscles": "courriers suivi retour"
+    },
+    {
+        "id": "15",
+        "categorie": "Courriers",
+        "question": "Comment évolue le nombre de PND chaque mois ?",
+        "page": "KPI_08",
+        "graphique": "Histogramme",
+        "données": "Date - Nombre de PND",
+        "motscles": "courriers retour suivi"
+    },
+    {
+        "id": "16",
+        "categorie": "Courriers",
+        "question": "Quels sont les délais moyens de retour des courriers en PND ?",
+        "page": "KPI_08",
+        "graphique": "Carte KPI",
+        "données": "Délai moyen retour PND",
+        "motscles": "courriers suivi délais PND"
+    },
+    {
+        "id": "17",
+        "categorie": "Courriers",
+        "question": "Quelle est la répartition des courriers revenus en PND par type ?",
+        "page": "KPI_08",
+        "graphique": "Graphique en secteurs",
+        "données": "Type de courrier - Nombre de PND",
+        "motscles": "courriers types retour suivi"
+    },
+    {
+        "id": "18",
+        "categorie": "Courriers",
+        "question": "Comment évolue le volume des courriers en PND par mois ?",
+        "page": "KPI_08",
+        "graphique": "Histogramme empilé",
+        "données": "Date - Nombre de PND",
+        "motscles": "courriers suivi évolution"
+    },
+    {
+        "id": "19",
         "categorie": "Factures",
         "question": "Quel est le taux d’impayés actuel ?",
         "page": "KPI_04",
         "graphique": "Carte KPI",
         "données": "Taux d'impayés",
-        "motscles": "taux-impayés factures-non-payées suivi-impayés"
+        "motscles": "impayés suivi paiement"
     },
     {
-        "id": "11",
+        "id": "20",
         "categorie": "Factures",
         "question": "Quels sont les montants impayés par agence ?",
         "page": "KPI_04",
-        "graphique": "Graphiques à barres empilées",
-        "données": "Agence - Total factures impayées",
-        "motscles": "montants-impayés agences-dettes suivi-financier"
+        "graphique": "Graphiques à barres",
+        "données": "Agence - Montant total impayé",
+        "motscles": "factures impayés suivi-financier"
     },
     {
-        "id": "12",
+        "id": "21",
         "categorie": "Factures",
-        "question": "Comment évoluent les impayés chaque mois ?",
+        "question": "Quelle est l’évolution des impayés sur les 12 derniers mois ?",
         "page": "KPI_04",
         "graphique": "Graphique en courbe",
-        "données": "Date - Nombre d'impayés restants - Date émission",
-        "motscles": "évolution-impayés suivi-mensuel dettes"
-    },
-        {
-            "id": "13",
-            "categorie": "Factures",
-            "question": "Que prévoit-on d'impayés pour les 3 prochains mois ?",
-            "page": "KPI_04",
-            "graphique": "Graphique en courbe",
-            "données": "Date - Nombre d'impayés restants - Date émission - Prévisions 3 mois prochains",
-            "motscles": "prévisions-impayés évolution-financière dettes-3-mois paiement-estimé"
-        },
-        {
-            "id": "14",
-            "categorie": "Factures",
-            "question": "Quel est le délai moyen de paiement des factures ?",
-            "page": "KPI_05",
-            "graphique": "Carte KPI",
-            "données": "Délai moyen paiement",
-            "motscles": "délai-moyen paiement-factures échéance-financière gestion-trésorerie"
-        },
-        {
-            "id": "15",
-            "categorie": "Factures",
-            "question": "Comment sont répartis les paiements en fonction du délai ?",
-            "page": "KPI_05",
-            "graphique": "Graphique en secteurs",
-            "données": "Intervalle paiement - Nombre de facture",
-            "motscles": "répartition-paiements délais-paiement segmentation-factures"
-        },
-        {
-            "id": "16",
-            "categorie": "Factures",
-            "question": "Quelle est l’évolution du délai moyen de paiement ?",
-            "page": "KPI_05",
-            "graphique": "Graphique en courbe",
-            "données": "Date - Total impayés par mois - Total des paiements effectués par mois",
-            "motscles": "évolution-paiement suivi-délai historique-facturation"
-        },
-        {
-            "id": "17",
-            "categorie": "Factures",
-            "question": "Quelle est la date de paiement enregistré et clôturé ?",
-            "page": "KPI_05",
-            "graphique": "Carte KPI",
-            "données": "Date de paiement enregistré - Date de clôture enregistré",
-            "motscles": "date-paiement validation-transaction clôture-factures"
-        },
-        {
-            "id": "18",
-            "categorie": "Paiements",
-            "question": "Quel est le pourcentage de prélèvements rejetés ?",
-            "page": "KPI_06",
-            "graphique": "Carte KPI",
-            "données": "Taux de prélèvements rejetés",
-            "motscles": "taux-rejets prélèvements-non-validés gestion-impayés"
-        },
-        {
-            "id": "19",
-            "categorie": "Paiements",
-            "question": "Quels sont les modes de paiement les plus rejetés ?",
-            "page": "KPI_06",
-            "graphique": "Segments",
-            "données": "Mode de paiement",
-            "motscles": "modes-paiement taux-rejet comparaison-transactions"
-        },
-        {
-            "id": "20",
-            "categorie": "Paiements",
-            "question": "Comment évoluent les rejets de prélèvements par mois ?",
-            "page": "KPI_06",
-            "graphique": "Graphique en aires empilé",
-            "données": "Date - Total payés par mois - Total impayés par mois",
-            "motscles": "évolution-rejets suivi-prélèvements mensuel"
-        },    
-        {
-            "id": "21",
-            "categorie": "Paiements",
-            "question": "Comment évoluent la répartition des paiements en fonction du délai classé par groupe de facture ?",
-            "page": "KPI_06",
-            "graphique": "Histogramme groupé",
-            "données": "Impayés par tranche de 100 - Nombre de factures",
-            "motscles": "répartition-paiements délais-paiement factures-groupées"
-        },
-        {
-            "id": "22",
-            "categorie": "Compteurs",
-            "question": "Taux de compteurs n'ont pas été relevés depuis 1 an ?",
-            "page": "KPI_07",
-            "graphique": "Carte KPI : % de compteurs sans relève",
-            "données": "Taux de compteur sans relève - Date",
-            "motscles": "compteurs taux-sans-relève suivi-relevé"
-        },
-        {
-            "id": "23",
-            "categorie": "Compteurs",
-            "question": "Quels secteurs ont le plus de compteurs sans relève ?",
-            "page": "KPI_07",
-            "graphique": "Segment",
-            "données": "Secteur",
-            "motscles": "compteurs secteurs-affectés absence-relevé"
-        },
-        {
-            "id": "24",
-            "categorie": "Compteurs",
-            "question": "Où sont situés les compteurs sans relève ?",
-            "page": "KPI_07",
-            "graphique": "Carte géographique",
-            "données": "Numéro compteur - Ville - Latitude - Longitude - Secteur - Date de relève - Numéro de tournée",
-            "motscles": "compteurs localisation-relevé absence-intervention"
-        },
-        {
-            "id": "25",
-            "categorie": "Compteurs",
-            "question": "Rechercher un compteur ?",
-            "page": "KPI_07",
-            "graphique": "Text filter",
-            "données": "Numéro compteur",
-            "motscles": "compteurs recherche-numéro suivi-distribution"
-        },
-        {
-            "id": "26",
-            "categorie": "Courriers",
-            "question": "Quel pourcentage de courriers est revenu en PND ?",
-            "page": "KPI_08",
-            "graphique": "Carte KPI : % de courriers revenus en PND",
-            "données": "Taux de courriers revenus en PND (Pli non distribué)",
-            "motscles": "courriers taux-retour PND non-distribué"
-        },
-        {
-            "id": "27",
-            "categorie": "Courriers",
-            "question": "Quelles agences ont le plus de courriers revenus en PND ?",
-            "page": "KPI_08",
-            "graphique": "Graphique en anneau",
-            "données": "Agence - Nombre de courrier revenu en PND",
-            "motscles": "courriers agences-impacts taux-PND"
-        },
-        {
-            "id": "28",
-            "categorie": "Courriers",
-            "question": "Comment évolue le nombre de PND chaque mois ?",
-            "page": "KPI_08",
-            "graphique": "Histogramme empilé",
-            "données": "Date - Nombre de courrier revenu en PND",
-            "motscles": "courriers évolution-mensuelle suivi-PND"
-        },
-        {
-            "id": "29",
-            "categorie": "Courriers",
-            "question": "Quel est le délai moyen de retour des courriers en PND ?",
-            "page": "KPI_08",
-            "graphique": "Carte KPI",
-            "données": "Délai moyen retour des courriers en PND",
-            "motscles": "courriers délai-retour PND-suivi"
-        },
-        {
-            "id": "30",
-            "categorie": "Factures",
-            "question": "Quel est le montant total facturé et réglé ?",
-            "page": "KPI_09",
-            "graphique": "Carte KPI",
-            "données": "Montant total facturé/réglé/restant",
-            "motscles": "factures montant-total paiements-effectués"
-        },
-        {
-            "id": "31",
-            "categorie": "Factures",
-            "question": "Quels sont les statuts des factures ?",
-            "page": "KPI_09",
-            "graphique": "Graphique en secteurs",
-            "données": "Statut de l'affaire - Nombre d'affaire par statut",
-            "motscles": "factures statuts-gestion suivi-facturation"
-        },
-        {
-            "id": "32",
-            "categorie": "Factures",
-            "question": "Quels sont les détails des règlements par titre et rôle ?",
-            "page": "KPI_09",
-            "graphique": "Table",
-            "données": "Date - Numéro de facture - Montant total facturé/réglé/restant",
-            "motscles": "factures détails-règlements historique-transactions"
+        "données": "Date - Montants impayés",
+        "motscles": "impayés évolution suivi-temps"
     },
     {
-            "id": "33",
-            "categorie": "Général",
-            "question": "Quels sont les KPI les plus critiques en ce moment ?",
-            "page": "Tableau_Bord_General",
-            "graphique": "Carte KPI",
-            "données": "Taux de réclamations clôturées/attente/cours - Délai moyen de paiement - Taux de compteur sans relève",
-            "motscles": "KPI-critiques performance-indicateurs suivi-urgence"
+        "id": "22",
+        "categorie": "Factures",
+        "question": "Quelle est l'évolution du taux d’impayés sur les 6 derniers mois ?",
+        "page": "KPI_04",
+        "graphique": "Graphique en courbe",
+        "données": "Date - Nombre de factures impayées",
+        "motscles": "factures impayés suivi-trésorerie"
     },
     {
-            "id": "34",
-            "categorie": "Général",
-            "question": "Quelle est l’évolution globale des réclamations impayés et paiements ?",
-            "page": "Tableau_Bord_General",
-            "graphique": "Graphique combiné",
-            "données": "Tendance des réclamations - impayés et paiements",
-            "motscles": "évolution-réclamations suivi-impayés tendances-paiements"
+        "id": "23",
+        "categorie": "Factures",
+        "question": "Quelle est la répartition des paiements en fonction du délai ?",
+        "page": "KPI_05",
+        "graphique": "Graphique en secteurs",
+        "données": "Intervalle de paiement - Nombre de factures",
+        "motscles": "paiements délais suivi"
     },
     {
-            "id": "35",
-            "categorie": "Général",
-            "question": "Quels sont les secteurs ou agences les plus impactés par les anomalies ?",
-            "page": "Tableau_Bord_General",
-            "graphique": "Heatmap : Impact des secteurs/agences",
-            "données": "secteurs agences anomalies impact",
-            "motscles": "impact-anomalies secteurs-affectés suivi-agences"
+        "id": "24",
+        "categorie": "Factures",
+        "question": "Quel est le délai moyen de paiement d’une facture ?",
+        "page": "KPI_05",
+        "graphique": "Carte KPI",
+        "données": "Délai moyen de paiement",
+        "motscles": "factures délai paiement suivi-financier"
     },
     {
-            "id": "36",
-            "categorie": "Général",
-            "question": "Quels indicateurs nécessitent une action immédiate ?",
-            "page": "Tableau_Bord_General",
-            "graphique": "Carte KPI + Alerte : Indicateurs nécessitant une action",
-            "données": "indicateurs action immédiate",
-            "motscles": "indicateurs-critiques suivi-urgence alerte-action"
+        "id": "25",
+        "categorie": "Factures",
+        "question": "Comment évoluent les délais moyens de paiement ?",
+        "page": "KPI_05",
+        "graphique": "Graphique en courbe",
+        "données": "Date - Moyenne des délais de paiement",
+        "motscles": "paiements délai évolution gestion"
     },
     {
-            "id": "37",
-            "categorie": "Général",
-            "question": "Quelle est la performance globale des services sur les 6 derniers mois ?",
-            "page": "Tableau_Bord_General",
-            "graphique": "Graphique en courbe",
-            "données": "Date - Total factures impayées",
-            "motscles": "performance-services suivi-mensuel efficacité-opérationnelle"
+        "id": "26",
+        "categorie": "Factures",
+        "question": "Quelle est la date de paiement enregistrée et de clôture du règlement ?",
+        "page": "KPI_05",
+        "graphique": "Carte KPI",
+        "données": "Date de paiement - Date de clôture",
+        "motscles": "factures paiement validation-clôture"
+    },
+    {
+        "id": "27",
+        "categorie": "Factures",
+        "question": "Quel est le montant total facturé et réglé ?",
+        "page": "KPI_09",
+        "graphique": "Carte KPI",
+        "données": "Montant total facturé/réglé/restant",
+        "motscles": "factures paiement suivi"
+    },
+    {
+        "id": "28",
+        "categorie": "Factures",
+        "question": "Quels sont les statuts actuels des factures ?",
+        "page": "KPI_09",
+        "graphique": "Graphique en secteurs",
+        "données": "Factures en cours - Factures réglées - Factures en attente",
+        "motscles": "factures suivi statut"
+    },
+    {
+        "id": "29",
+        "categorie": "Factures",
+        "question": "Quels sont les détails des règlements des factures par rôle ?",
+        "page": "KPI_09",
+        "graphique": "Table",
+        "données": "Date - Numéro de facture - Montant total facturé/réglé/restant",
+        "motscles": "factures règlements suivi-détail"
+    },
+    {
+        "id": "30",
+        "categorie": "Factures",
+        "question": "Comment évolue le nombre d'impayés par rapport aux factures réglées ?",
+        "page": "KPI_09",
+        "graphique": "Graphique combiné",
+        "données": "Date - Nombre d'impayés - Nombre de factures réglées",
+        "motscles": "factures impayés comparaison paiement"
+    },
+    {
+        "id": "31",
+        "categorie": "Paiements",
+        "question": "Quel est le taux de prélèvements rejetés ?",
+        "page": "KPI_06",
+        "graphique": "Carte KPI",
+        "données": "Taux de prélèvements rejetés",
+        "motscles": "paiements rejets suivi-trésorerie"
+    },
+    {
+        "id": "32",
+        "categorie": "Paiements",
+        "question": "Quels sont les modes de paiement les plus rejetés ?",
+        "page": "KPI_06",
+        "graphique": "Graphique en segments",
+        "données": "Mode de paiement - Nombre de rejets",
+        "motscles": "paiements refusé gestion-financière"
+    },
+    {
+        "id": "33",
+        "categorie": "Paiements",
+        "question": "Comment évolue la répartition des paiements en fonction du délai ?",
+        "page": "KPI_06",
+        "graphique": "Histogramme",
+        "données": "Tranche de paiement - Nombre de factures",
+        "motscles": "paiements délais suivi gestion"
+    },
+    {
+        "id": "34",
+        "categorie": "Paiements",
+        "question": "Quelle est la part des impayés sur les factures émises ?",
+        "page": "KPI_06",
+        "graphique": "Carte KPI",
+        "données": "Montant total factures - Montant impayé",
+        "motscles": "factures impayés suivi-trésorerie"
+    },
+    {
+        "id": "35",
+        "categorie": "Paiements",
+        "question": "Quelle est la répartition des paiements selon les modes utilisés ?",
+        "page": "KPI_06",
+        "graphique": "Graphique en secteurs",
+        "données": "Mode de paiement - Nombre de transactions",
+        "motscles": "paiements suivi méthode comparaison"
+    },
+    {
+        "id": "36",
+        "categorie": "Réclamations",
+        "question": "Quelle est la répartition des réclamations par mois ?",
+        "page": "KPI_01",
+        "graphique": "Histogramme groupé",
+        "données": "Date - Nombre de réclamations",
+        "motscles": "réclamations suivi-mensuel évolution"
+    },
+    {
+        "id": "37",
+        "categorie": "Réclamations",
+        "question": "Quelle est la durée moyenne de traitement des réclamations ?",
+        "page": "KPI_01",
+        "graphique": "Nuage de points",
+        "données": "Date - Moyenne de temps de traitement - Type de réclamation - Agence",
+        "motscles": "réclamations délais traitement satisfaction"
+    },
+    {
+        "id": "38",
+        "categorie": "Réclamations",
+        "question": "Quelles réclamations sont encore en attente et leur priorité ?",
+        "page": "KPI_02",
+        "graphique": "Table",
+        "données": "Type de réclamation - Date création - Agence - Délai d'attente - Priorité",
+        "motscles": "réclamations attente urgence suivi-priorité"
+    },
+    {
+        "id": "39",
+        "categorie": "Réclamations",
+        "question": "Quels types de réclamations en attente sont les plus fréquents ?",
+        "page": "KPI_02",
+        "graphique": "Graphique en secteurs",
+        "données": "Nombre d'affaires - Type de réclamation",
+        "motscles": "réclamations types-fréquents gestion-dossiers"
+    },
+    {
+        "id": "40",
+        "categorie": "Réclamations",
+        "question": "Quel est le taux de réclamations en attente sur les 15 derniers jours ?",
+        "page": "KPI_02",
+        "graphique": "Carte KPI",
+        "données": "Taux de réclamation - Date",
+        "motscles": "taux réclamations attente suivi-traitement"
     }
 ]
-    

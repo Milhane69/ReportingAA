@@ -42,58 +42,8 @@
         <!-- Sélection d'une question via le menu déroulant -->
         <select id="question-select">
             <option value="">-- Sélectionner une question --</option>
-            <optgroup label="Général">
-                <option value="Tableau_Bord_General">Quels sont les KPI les plus critiques en ce moment ?</option>
-                <option value="Tableau_Bord_General">Quelle est l’évolution globale des réclamations impayés et paiements ?</option>
-                <option value="Tableau_Bord_General">Quels sont les secteurs ou agences les plus impactés par les anomalies ?</option>
-                <option value="Tableau_Bord_General">Quels indicateurs nécessitent une action immédiate ?</option>
-                <option value="Tableau_Bord_General">Quelle est la performance globale des services sur les 6 derniers mois ?</option>
-            </optgroup>
-            <optgroup label="Réclamations">
-                <option value="KPI_01">Durée moyenne de traitement des réclamations</option>
-                <option value="KPI_01">Comment évoluent les réclamations par mois ?</option>
-                <option value="KPI_01">Quels sont les tendances mensuelles des réclamations et leur durée moyenne par année ?</option>
-                <option value="KPI_02">Quelles réclamations sont encore en attente ?</option>
-                <option value="KPI_02">Quels types de réclamations en attente sont les plus fréquents ?</option>
-                <option value="KPI_02">Quel est le taux de réclamations en attente ces 15 derniers jours ?</option>
-            </optgroup>
-            <optgroup label="Affaires">
-                <option value="KPI_03">Comment évoluent les affaires ouvertes et clôturées ?</option>
-                <option value="KPI_03">Quel pourcentage d'affaires est clôturé en moins de X jours ?</option>
-                <option value="KPI_03">Quelle est la répartition des affaires par agence ?</option>
-            </optgroup>
-            <optgroup label="Factures">
-                <option value="KPI_04">Quel est le taux d’impayés actuel ?</option>
-                <option value="KPI_04">Quels sont les montants impayés par agence ?</option>
-                <option value="KPI_04">Que prévoit-on d'impayés pour les 3 prochains mois ?</option>                
-                <option value="KPI_04">Comment évoluent les impayés chaque mois ?</option>
-                <option value="KPI_05">Quel est le délai moyen de paiement des factures ?</option>
-                <option value="KPI_05">Comment sont répartis les paiements en fonction du délai ?</option>
-                <option value="KPI_05">Quelle est l’évolution du délai moyen de paiement ?</option>
-                <option value="KPI_05">Quelle est la date de paiement enregistré et clôturé ?</option>                
-                <option value="KPI_09">Quel est le montant total facturé et réglé ?</option>
-                <option value="KPI_09">Quels sont les statuts des factures en cours ?</option>
-                <option value="KPI_09">Quels sont les détails des règlements par titre et rôle ?</option>
-            </optgroup>
-            <optgroup label="Paiements">
-                <option value="KPI_06">Quel est le pourcentage de prélèvements rejetés ?</option>
-                <option value="KPI_06">Quels sont les modes de paiement les plus rejetés ?</option>
-                <option value="KPI_06">Comment évoluent les rejets de prélèvements par mois ?</option>
-                <option value="KPI_06">Comment évoluent la répartition des paiements en fonction du délai classé par groupe de facture ?</option>            
-            </optgroup>
-            <optgroup label="Compteurs">
-                <option value="KPI_07">Taux de compteurs non relevés depuis 1 an ?</option>
-                <option value="KPI_07">Quels secteurs ont le plus de compteurs sans relève ?</option>
-                <option value="KPI_07">Où sont situés les compteurs sans relève ?</option>
-                <option value="KPI_07">Rechercher un compteur ?</option>
-            </optgroup>
-            <optgroup label="Courriers">
-                <option value="KPI_08">Quel pourcentage de courriers est revenu en PND ?</option>
-                <option value="KPI_08">Quelles agences ont le plus de courriers revenus en PND ?</option>
-                <option value="KPI_08">Comment évolue le nombre de PND chaque mois ?</option>
-                <option value="KPI_08">Quel est le délai moyen de retour des courriers en PND ?</option>                
-            </optgroup>            
         </select>
+        
     
     <!-- Boutons d'interaction -->
     <button id="favorite-btn">⭐ Ajouter aux Favoris</button>
@@ -106,7 +56,7 @@
 
     <iframe id="powerbi-frame" width="100%" height="700px" src="" frameborder="0" allowFullScreen="true"></iframe>
 
-    <!-- Bouton d'ouverture du chatbot -->
+   <!-- Bouton d'ouverture du chatbot -->
     <button id="chatbot-toggle" class="chatbot-toggle">💬</button>
 
         <!-- Chatbot -->

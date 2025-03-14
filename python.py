@@ -8,9 +8,9 @@ json_file = "DataIA.json"
 # Initialize an empty list to hold the data
 data = []
 
-# Read the CSV file and convert it to a list of dictionaries
+# Read the CSV file with a semicolon delimiter
 with open(csv_file, newline='', encoding='utf-8') as csvfile:
-    reader = csv.DictReader(csvfile)
+    reader = csv.DictReader(csvfile, delimiter=';')  # Specify semicolon as the delimiter
     for row in reader:
         data.append(row)
 

@@ -36,17 +36,17 @@ document.addEventListener("DOMContentLoaded", function () {
     let favorites = JSON.parse(localStorage.getItem(`favorites_${currentUser}`)) || [];
     // Liste des pages Power BI associées aux questions
     const pagesPowerBI = {
-        "Tableau_Bord_General" : "https://app.powerbi.com/view?r=eyJrIjoiOTZlN2E5NDQtZjBmMC00ZTk0LWFiNmQtODcxOGYyYzA4OGQ4IiwidCI6ImUyMWU5NzgzLWQwYTAtNDhmOC04NTBlLTBiMDgxYjQ2ZDc4OCIsImMiOjh9&embedImagePlaceholder=true&pageName=20ce2b37f60710341947",
-    "KPI_01" : "https://app.powerbi.com/view?r=eyJrIjoiOTZlN2E5NDQtZjBmMC00ZTk0LWFiNmQtODcxOGYyYzA4OGQ4IiwidCI6ImUyMWU5NzgzLWQwYTAtNDhmOC04NTBlLTBiMDgxYjQ2ZDc4OCIsImMiOjh9&embedImagePlaceholder=true&pageName=7f8c2fe388d505176022",
-    "KPI_02" :  "https://app.powerbi.com/view?r=eyJrIjoiOTZlN2E5NDQtZjBmMC00ZTk0LWFiNmQtODcxOGYyYzA4OGQ4IiwidCI6ImUyMWU5NzgzLWQwYTAtNDhmOC04NTBlLTBiMDgxYjQ2ZDc4OCIsImMiOjh9&embedImagePlaceholder=true&pageName=4a5e0b97f1d8266baa3f",
-    "KPI_03" :  "https://app.powerbi.com/view?r=eyJrIjoiOTZlN2E5NDQtZjBmMC00ZTk0LWFiNmQtODcxOGYyYzA4OGQ4IiwidCI6ImUyMWU5NzgzLWQwYTAtNDhmOC04NTBlLTBiMDgxYjQ2ZDc4OCIsImMiOjh9&embedImagePlaceholder=true&pageName=7f80dfd66e4030bf1534",
-    "KPI_04" :  "https://app.powerbi.com/view?r=eyJrIjoiOTZlN2E5NDQtZjBmMC00ZTk0LWFiNmQtODcxOGYyYzA4OGQ4IiwidCI6ImUyMWU5NzgzLWQwYTAtNDhmOC04NTBlLTBiMDgxYjQ2ZDc4OCIsImMiOjh9&embedImagePlaceholder=true&pageName=76bee452b6809ac919f6",
-    "KPI_05" :  "https://app.powerbi.com/view?r=eyJrIjoiOTZlN2E5NDQtZjBmMC00ZTk0LWFiNmQtODcxOGYyYzA4OGQ4IiwidCI6ImUyMWU5NzgzLWQwYTAtNDhmOC04NTBlLTBiMDgxYjQ2ZDc4OCIsImMiOjh9&embedImagePlaceholder=true&pageName=6053d46dba80451bb78c",
-    "KPI_06" :  "https://app.powerbi.com/view?r=eyJrIjoiOTZlN2E5NDQtZjBmMC00ZTk0LWFiNmQtODcxOGYyYzA4OGQ4IiwidCI6ImUyMWU5NzgzLWQwYTAtNDhmOC04NTBlLTBiMDgxYjQ2ZDc4OCIsImMiOjh9&embedImagePlaceholder=true&pageName=cc1ceb04b0ec5823151b",
-    "KPI_07" :  "https://app.powerbi.com/view?r=eyJrIjoiOTZlN2E5NDQtZjBmMC00ZTk0LWFiNmQtODcxOGYyYzA4OGQ4IiwidCI6ImUyMWU5NzgzLWQwYTAtNDhmOC04NTBlLTBiMDgxYjQ2ZDc4OCIsImMiOjh9&embedImagePlaceholder=true&pageName=7a4a20193bd98dc35666",
-    "KPI_08" :  "https://app.powerbi.com/view?r=eyJrIjoiOTZlN2E5NDQtZjBmMC00ZTk0LWFiNmQtODcxOGYyYzA4OGQ4IiwidCI6ImUyMWU5NzgzLWQwYTAtNDhmOC04NTBlLTBiMDgxYjQ2ZDc4OCIsImMiOjh9&embedImagePlaceholder=true&pageName=20ab0142f85e5e4416fd",
-    "KPI_09" :  "https://app.powerbi.com/view?r=eyJrIjoiOTZlN2E5NDQtZjBmMC00ZTk0LWFiNmQtODcxOGYyYzA4OGQ4IiwidCI6ImUyMWU5NzgzLWQwYTAtNDhmOC04NTBlLTBiMDgxYjQ2ZDc4OCIsImMiOjh9&embedImagePlaceholder=true&pageName=4199aa39c44b26400c92"
-    };
+        "Tableau_Bord_General" : "https://app.powerbi.com/view?r=eyJrIjoiN2Y3MzkyNTAtYzA5OS00ZThlLTkyYzItMDk3NGViOGMxZjcyIiwidCI6ImUyMWU5NzgzLWQwYTAtNDhmOC04NTBlLTBiMDgxYjQ2ZDc4OCIsImMiOjh9&pageName=20ce2b37f60710341947",
+        "KPI_01" :  "https://app.powerbi.com/view?r=eyJrIjoiN2Y3MzkyNTAtYzA5OS00ZThlLTkyYzItMDk3NGViOGMxZjcyIiwidCI6ImUyMWU5NzgzLWQwYTAtNDhmOC04NTBlLTBiMDgxYjQ2ZDc4OCIsImMiOjh9&pageName=7f8c2fe388d505176022&chromeless=true&navContentPaneEnabled=false&autoAuth=true",
+        "KPI_02" :  "https://app.powerbi.com/view?r=eyJrIjoiN2Y3MzkyNTAtYzA5OS00ZThlLTkyYzItMDk3NGViOGMxZjcyIiwidCI6ImUyMWU5NzgzLWQwYTAtNDhmOC04NTBlLTBiMDgxYjQ2ZDc4OCIsImMiOjh9&pageName=4a5e0b97f1d8266baa3f&chromeless=true&navContentPaneEnabled=false&autoAuth=true",
+        "KPI_03" :  "https://app.powerbi.com/view?r=eyJrIjoiN2Y3MzkyNTAtYzA5OS00ZThlLTkyYzItMDk3NGViOGMxZjcyIiwidCI6ImUyMWU5NzgzLWQwYTAtNDhmOC04NTBlLTBiMDgxYjQ2ZDc4OCIsImMiOjh9&pageName=7f80dfd66e4030bf1534chromeless=true&navContentPaneEnabled=false&autoAuth=true",
+        "KPI_04" :  "https://app.powerbi.com/view?r=eyJrIjoiN2Y3MzkyNTAtYzA5OS00ZThlLTkyYzItMDk3NGViOGMxZjcyIiwidCI6ImUyMWU5NzgzLWQwYTAtNDhmOC04NTBlLTBiMDgxYjQ2ZDc4OCIsImMiOjh9&pageName=76bee452b6809ac919f6&chromeless=true&navContentPaneEnabled=false&autoAuth=true",
+        "KPI_05" :  "https://app.powerbi.com/view?r=eyJrIjoiN2Y3MzkyNTAtYzA5OS00ZThlLTkyYzItMDk3NGViOGMxZjcyIiwidCI6ImUyMWU5NzgzLWQwYTAtNDhmOC04NTBlLTBiMDgxYjQ2ZDc4OCIsImMiOjh9&pageName=6053d46dba80451bb78c&chromeless=true&navContentPaneEnabled=false&autoAuth=true",
+        "KPI_06" :  "https://app.powerbi.com/view?r=eyJrIjoiN2Y3MzkyNTAtYzA5OS00ZThlLTkyYzItMDk3NGViOGMxZjcyIiwidCI6ImUyMWU5NzgzLWQwYTAtNDhmOC04NTBlLTBiMDgxYjQ2ZDc4OCIsImMiOjh9&pageName=cc1ceb04b0ec5823151b&chromeless=true&navContentPaneEnabled=false&autoAuth=true",
+        "KPI_07" :  "https://app.powerbi.com/view?r=eyJrIjoiN2Y3MzkyNTAtYzA5OS00ZThlLTkyYzItMDk3NGViOGMxZjcyIiwidCI6ImUyMWU5NzgzLWQwYTAtNDhmOC04NTBlLTBiMDgxYjQ2ZDc4OCIsImMiOjh9&pageName=7a4a20193bd98dc35666&chromeless=true&navContentPaneEnabled=false&autoAuth=true",
+        "KPI_08" :  "https://app.powerbi.com/view?r=eyJrIjoiN2Y3MzkyNTAtYzA5OS00ZThlLTkyYzItMDk3NGViOGMxZjcyIiwidCI6ImUyMWU5NzgzLWQwYTAtNDhmOC04NTBlLTBiMDgxYjQ2ZDc4OCIsImMiOjh9&pageName=20ab0142f85e5e4416fd&chromeless=true&navContentPaneEnabled=false&autoAuth=true",
+        "KPI_09" :  "https://app.powerbi.com/view?r=eyJrIjoiN2Y3MzkyNTAtYzA5OS00ZThlLTkyYzItMDk3NGViOGMxZjcyIiwidCI6ImUyMWU5NzgzLWQwYTAtNDhmOC04NTBlLTBiMDgxYjQ2ZDc4OCIsImMiOjh9&pageName=4199aa39c44b26400c92&chromeless=true&navContentPaneEnabled=false&autoAuth=true"
+    };    
 
     // Noms des pages Power BI
     const pageNames = {
@@ -289,61 +289,124 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
     
-    
-    
-
-    // 🟢 Rechercher et recommander une page en temps réel
-    function rechercherQuestion() {
-        let query = analyserTexte(searchInput.value);
-        let motsTrouves = [...selectedKeywords];
-    
-        let bestMatch = null;
-        let bestScore = 0;
-    
-        questionsData.forEach(question => {
-            let score = 0;
-            const motsCles = question.motscles ? question.motscles.toLowerCase().split(" ") : [];
-    
-            motsTrouves.forEach(keyword => {
-                if (motsCles.includes(keyword)) score += 5;
-                if (question.question.toLowerCase().includes(keyword)) score += 3;
-                if (question.categorie.toLowerCase().includes(keyword)) score += 2;
+        // 📌 Recherche avancée prenant en compte tous les éléments de la question
+        function rechercherQuestion() {
+            let query = analyserTexte(searchInput.value);
+            let motsTrouves = [...selectedKeywords]; // Mots-clés sélectionnés
+        
+            // 📌 Vérification : La recherche se fait si :
+            // - La phrase tapée fait au moins 5 caractères
+            // - OU au moins un mot-clé est sélectionné
+            if (query.length < 5 && motsTrouves.length === 0) {
+                pageRecommandee.innerHTML = "<strong>Veuillez entrer au moins 5 caractères ou sélectionner un mot-clé.</strong>";
+                return;
+            }
+        
+            let meilleureQuestion = null;
+            let meilleurScore = 0;
+            const seuilSimilarite = 80; // Exige une correspondance ≥ 80%
+        
+            questionsData.forEach(question => {
+                let score = 0;
+        
+                // 🔹 Récupération et nettoyage des données
+                let texteQuestion = analyserTexte(question.question);
+                let texteMotsCles = analyserTexte(question.motscles || "");
+                let texteDonnees = analyserTexte(question.données || "");
+        
+                // 🔹 Vérification avec la phrase écrite par l'utilisateur
+                if (query.length >= 5) {
+                    let similariteQuestion = calculerSimilarite(query, texteQuestion);
+                    let similariteMotsCles = calculerSimilarite(query, texteMotsCles);
+                    let similariteDonnees = calculerSimilarite(query, texteDonnees);
+        
+                    if (similariteQuestion >= seuilSimilarite) score += 5;
+                    if (similariteMotsCles >= seuilSimilarite) score += 4;
+                    if (similariteDonnees >= seuilSimilarite) score += 3;
+        
+                    // 🔹 Vérification si une partie du mot-clé est contenue dans la recherche
+                    texteMotsCles.split(" ").forEach(keyword => {
+                        if (query.includes(keyword)) score += 2;
+                    });
+        
+                    // 🔹 Vérification si la recherche correspond à une partie du texte de la question
+                    if (texteQuestion.includes(query)) score += 3;
+                }
+        
+                // 🔹 Vérification avec les mots-clés sélectionnés par l’utilisateur
+                motsTrouves.forEach(keyword => {
+                    if (texteMotsCles.includes(keyword)) score += 5;
+                    if (texteQuestion.includes(keyword)) score += 3;
+                    if (texteDonnees.includes(keyword)) score += 2;
+                });
+        
+                // Sélection de la meilleure correspondance
+                if (score > meilleurScore) {
+                    meilleurScore = score;
+                    meilleureQuestion = question;
+                }
             });
-    
-            if (query) {
-                if (question.question.toLowerCase().includes(query)) score += 5;
-                if (question.motscles.toLowerCase().includes(query)) score += 4;
+        
+            // 🔹 Mise à jour de l'affichage
+            if (meilleureQuestion) {
+                questionSelect.value = meilleureQuestion.page;
+                pageRecommandee.innerHTML = `<strong>${meilleureQuestion.question}</strong>`;
+                afficherGraphique();
+            } else {
+                pageRecommandee.innerHTML = "<strong>Aucune correspondance trouvée.</strong>";
             }
-    
-            if (score > bestScore) {
-                bestScore = score;
-                bestMatch = question.page;
-            }
-        });
-    
-        console.log("🔍 Meilleure correspondance trouvée :", bestMatch); // Debugging
-    
-        if (bestMatch) {
-            questionSelect.value = bestMatch;
-            pageRecommandee.innerHTML = `<strong>${pageNames[bestMatch]}</strong>`;
-            afficherGraphique();
-        } else {
-            pageRecommandee.innerHTML = "<strong>Aucune correspondance trouvée.</strong>";
         }
-    }
-    
+        
+        // 📌 Fonction pour calculer la similarité avec Levenshtein
+        function calculerSimilarite(a, b) {
+            if (!a || !b) return 0;
+            a = analyserTexte(a);
+            b = analyserTexte(b);
+        
+            let distance = distanceLevenshtein(a, b);
+            let maxLen = Math.max(a.length, b.length);
+            return ((maxLen - distance) / maxLen) * 100; // Retourne un pourcentage de similarité
+        }
+        
+        // 📌 Fonction de distance de Levenshtein
+        function distanceLevenshtein(a, b) {
+            const matrix = Array.from({ length: a.length + 1 }, (_, i) => Array(b.length + 1).fill(0));
+        
+            for (let i = 0; i <= a.length; i++) matrix[i][0] = i;
+            for (let j = 0; j <= b.length; j++) matrix[0][j] = j;
+        
+            for (let i = 1; i <= a.length; i++) {
+                for (let j = 1; j <= b.length; j++) {
+                    matrix[i][j] = Math.min(
+                        matrix[i - 1][j] + 1, // Suppression
+                        matrix[i][j - 1] + 1, // Insertion
+                        matrix[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1) // Substitution
+                    );
+                }
+            }
+            return matrix[a.length][b.length];
+        }
+        
+        // 📌 Correction de l'event listener (recherche activée si 5 caractères ou mots-clés)
+        searchInput.addEventListener("input", () => {
+            if (searchInput.value.length >= 5 || selectedKeywords.length > 0) {
+                afficherSuggestionsMotsCles();
+                rechercherQuestion();
+            } else {
+                pageRecommandee.innerHTML = "<strong>Veuillez entrer au moins 5 caractères ou sélectionner un mot-clé.</strong>";
+            }
+        });       
 
-    function afficherGraphique() {
+        function afficherGraphique() {
         const selectedPage = questionSelect.value;
-    
+
         if (!selectedPage) {
             console.warn("❌ Aucune question sélectionnée.");
             return;
         }
-    
-        console.log(`✅ Affichage du rapport pour : ${selectedPage}`); // Debugging
-    
-        // Vérifier si la page existe bien dans `pagesPowerBI`
+
+        console.log(`✅ Affichage du rapport pour : ${selectedPage}`);
+
         if (pagesPowerBI[selectedPage]) {
             powerbiFrame.src = pagesPowerBI[selectedPage];
         } else {
@@ -351,7 +414,6 @@ document.addEventListener("DOMContentLoaded", function () {
             powerbiFrame.src = ""; // Efface l'iframe si aucun rapport correspondant
         }
     }
-    
 
     searchInput.addEventListener("input", () => {
         afficherSuggestionsMotsCles();
@@ -480,4 +542,25 @@ document.addEventListener("DOMContentLoaded", function () {
     
     // Charger immédiatement les favoris au chargement de la page
     mettreAJourFavoris();
+
+    // Bloquer F12 (DevTools)
+    document.addEventListener("keydown", function(event) {
+        if (event.key === "F12" || (event.ctrlKey && event.shiftKey && event.key === "I")) {
+            event.preventDefault();
+        }
+    });
+
+    // Bloquer clic droit (Empêche "Inspecter")
+    document.addEventListener("contextmenu", function(event) {
+        event.preventDefault();
+    });
+
+    // Détecter si DevTools est ouvert
+    setInterval(function() {
+        if (window.outerHeight - window.innerHeight > 200 || window.outerWidth - window.innerWidth > 200) {
+            alert("Inspection interdite !");
+            window.location.href = "index.html"; // Redirige l’utilisateur
+        }
+    }, 1000);
+    questionSelect.addEventListener("change", afficherGraphique);
 });

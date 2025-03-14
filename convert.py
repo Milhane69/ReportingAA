@@ -2,13 +2,13 @@ import json
 
 def generer_explication(question_data):
     """
-    Génère une explication basée sur les informations de la question.
+    Génère une explication enrichie et plus fluide basée sur les informations de la question.
     """
     explication = (
-        f"Cette question appartient à la catégorie '{question_data['categorie']}'. "
-        f"Elle permet d'analyser '{question_data['question']}' en utilisant un {question_data['graphique']}. "
-        f"Les données exploitées sont : {question_data['données']}. "
-        f"Ce KPI est utile pour comprendre {question_data['motscles'].replace('-', ' ')}."
+        f"La question appartient à la catégorie {question_data['categorie']}, qui traite des problématiques liées à cette thématique. "
+        f"Elle permet d'examiner : {question_data['question']}, en exploitant un {question_data['graphique']}. "
+        f"Les principales données utilisées sont : {question_data['données']}. "
+        f"Ce KPI est essentiel pour mieux comprendre les aspects liés à {', '.join(question_data['motscles'].split('-'))}."
     )
     return explication
 
@@ -17,8 +17,7 @@ with open("DataIA.json", "r", encoding="utf-8") as file:
     data = json.load(file)
 
 # Ajouter une explication pour chaque question
-for question in data:
-    question["explication"] = generer_explication(question)
+data = [{**q, "explication": generer_explication(q)} for q in data]
 
 # Sauvegarder les données mises à jour dans un nouveau fichier
 with open("DataIAWithExplication.json", "w", encoding="utf-8") as file:
